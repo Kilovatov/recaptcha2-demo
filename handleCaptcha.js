@@ -22,4 +22,4 @@ sendToGoogleButton.addEventListener('click', function (event) {
         document.getElementById("google").classList.remove('d-none');
         document.getElementById("response").innerHTML = JSON.stringify(data);
     });
-})
+});
