@@ -20,6 +20,6 @@ sendToGoogleButton.addEventListener('click', function (event) {
         return response.json();
     }).then(function(data) {
         document.getElementById("google").classList.remove('d-none');
-        document.getElementById("response").innerHTML = data;
+        document.getElementById("response").innerHTML = JSON.stringify(data);
     });
 })
