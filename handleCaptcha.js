@@ -20,7 +20,7 @@ sendToGoogleButton.addEventListener('click', (event) => {
     event.preventDefault();
     fetch('https://www.google.com/recaptcha/api/siteverify', {
         method: 'post',
-        body: 'secret=6Lek-2sUAAAAABH9-lM5B5OwOAnK29Xc7tOJd3-H&response=' + token,
+        body: `secret=6Lek-2sUAAAAABH9-lM5B5OwOAnK29Xc7tOJd3-H&response=${token}`,
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         }

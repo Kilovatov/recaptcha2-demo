@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>reCAPTCHA V2 demo</title>
+
+    <!--LOOK HERE!-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--LOOK HERE!-->
+
     <script src="handleCaptcha.js" async defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
@@ -40,7 +44,11 @@
         </div>
     </div>
     <br/>
+
+    <!--LOOK HERE!-->
     <div class="g-recaptcha" data-sitekey="6Lek-2sUAAAAAOJ-t4VbF8fCTzI_lAK6u1ofPPWW"></div>
+    <!--LOOK HERE!-->
+
     <button class="btn btn-primary" type="submit" id="button">Submit form</button>
     </form>
 
@@ -49,10 +57,11 @@
         <div class="container">
             <h1 class="display-4">Token</h1>
             <p class="lead text-truncat" id="token-place" ></p>
+            <button class="btn btn-primary d-none" type="submit" id="button-send">Validate with Google</button>
         </div>
     </div>
 
-<button class="btn btn-primary d-none" type="submit" id="button-send">Send results to Google</button>
+
 <div class="jumbotron jumbotron-fluid d-none" id="google">
     <div class="container">
         <h1 class="display-4">Google Response</h1>
