@@ -20,11 +20,9 @@ sendToGoogleButton.addEventListener('click', (event) => {
     event.preventDefault();
     fetch('https://www.google.com/recaptcha/api/siteverify', {
         method: 'post',
-        mode: "cors",
         body: `secret=6Lek-2sUAAAAABH9-lM5B5OwOAnK29Xc7tOJd3-H&response=${token}`,
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            'Access-Control-Allow-Origin': '*',
         }
     }).then((response) => response.json()).then(function(data) {
         googleRespJumbotron.classList.remove('d-none');
